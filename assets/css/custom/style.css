@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'bold-font';
+    src: url(../../fonts/TrumpGothicEast_bold.ttf);
+}
+
+.site-container .container {
+    width: 1320px !important;
+}
+
+.h1{
+    font-size: 86px;
+    font-family: 'bold-font';
+    line-height: 100px;
+    text-transform: uppercase;
+}
+.para {
+    padding-left: 0;
+    color: #fff;
+    font-size: 22px;
+}
+.main-title {
+    margin-top: 30%;
+    color: #fff;
+}
+.nav-bar {
+    background: transparent;
+    height: 75px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.navbar__opener {
+    display: inline-block;
+    width: 64px;
+    height: 48px;
+    position: relative;
+    transform: rotate(0deg);
+    cursor: pointer;
+    position: absolute;
+    top: 43px;
+    right: 43px;
+    z-index: 100;
+}
+.navbar__opener span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 32px;
+    opacity: 1;
+    left: 16px;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out,background-color .3s ease-out;
+    background: #fff;
+}
+.navbar__opener:hover span {
+    background: #ef0d33!important;
+}
+.navbar--opened .navbar__opener span:first-child, .navbar--opened .navbar__opener span:nth-child(4) {
+    top: 21px;
+    width: 0;
+    left: 50%;
+}
+.navbar--opened .navbar__opener span:nth-child(2) {
+    transform: rotate(45deg);
+}
+.navbar--opened .navbar__opener span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+.navbar__brand, .navbar__opener, .navbar__title {
+    transition: top .5s ease,opacity .5s ease;
+}
+.navbar__opener span:first-child {
+    top: 13px;
+}
+.navbar__opener span:nth-child(2), .navbar__opener span:nth-child(3) {
+    top: 21px;
+}
+.navbar__opener span:nth-child(4) {
+    top: 29px;
+}
+.loading-section {
+    background: #000;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;  
+}
+/*.overlay-black {
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    opacity: 0.5;
+    z-index: 2;
+    position: absolute;
+}*/
+.logo-img img {
+    height: 155px;
+}
+.menu-container {
+    margin-top: 50px;
+    display: none;
+}
+li.menu-item {
+    list-style-type: none;
+    display: block;
+    padding: 3px 10px;
+}
+.menu-link {
+    font-family: 'bold-font';
+    font-weight: normal;
+    font-size: 43px;
+    color: #fff;
+}
+.menu-link:hover {
+    color: #ef0d33;
+    transition: color .3s linear;
+    text-decoration: none;
+}
+.content-sep {
+    width: 50px;
+    height: 7px;
+    background-color: #ef0d33;
+    margin: 30px 0;
+    text-align: left;
+}
+
+@media screen and (min-width: 48em)
+    .navbar__opener {
+        top: 43px;
+        right: 43px;
+    }
+}
