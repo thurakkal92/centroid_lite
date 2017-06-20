@@ -13,7 +13,7 @@ $(function(){
         mobile: true
     };
 
-    sr.reveal('.main-title,.content-sep,.para,.menu-container ', intro, 200);
+    sr.reveal('.main-title,.content-sep,.p,.menu-container,.h2,.round-img-container', intro, 200);
 
 
 	$(".navbar__opener").on("click",function(){
