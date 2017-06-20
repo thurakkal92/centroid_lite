@@ -27,7 +27,8 @@
     font-family: 'bold-font';
     line-height: 60px;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 .p {
@@ -37,7 +38,7 @@
     font-family: 'paragraph-font';
 }
 .main-title {
-    margin-top: 30%;
+    margin-top: 25%;
     color: #fff;
 }
 .nav-bar {
@@ -159,7 +160,10 @@ li.menu-item {
 .what-we-do {
     background: #ff943b;
     color: #fff;
-    text-align: center;
+    text-align: center; 
+}
+
+.container-padding {
     padding: 72px 0;
 }
 .what-we-do .h2 {
@@ -184,6 +188,54 @@ li.menu-item {
 }
 .padding-top-50 {
     padding-top: 50px;
+}
+.form-input {
+    width: 100%;
+    border: 2px solid #076194;
+    border-radius: 0;
+    color: #000;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.button {
+    border: none;
+    color: #fff;
+    background-color: #ef0d33;
+    width: 100%;
+    text-transform: uppercase;
+    font-family: 'paragraph-font';
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+.map-container {
+    padding: 0;
+}
+.map-container iframe {
+    width: 100%;
+}
+.land-details {
+    width: 100%;
+    background: #076194;
+    color: #fff;
+    font-family: 'bold-font';
+    font-size: 20px;
+    letter-spacing: 1.2px;
+}
+
+.land-details .span {
+    width: 100%;
+    display: block;
+    padding: 5px;
+}
+
+.padding-20 {
+    padding: 20px;
+}
+
+.padding-30 {
+    padding: 30px;
 }
 
 @media screen and (min-width: 48em)
