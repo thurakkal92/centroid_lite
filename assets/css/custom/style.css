@@ -8,9 +8,9 @@
     src: url(../../fonts/TrumpGothicEast_bold.ttf);
 }
 
-.site-container .container {
+/*.site-container .container {
     width: 1320px !important;
-}
+}*/
 
 .h1{
     font-size: 86px;
@@ -125,7 +125,9 @@ li.menu-item {
     font-size: 43px;
     color: #fff;
 }
-.menu-link:hover {
+.menu-link:hover,
+.menu-link:focus,
+.menu-link:active {
     color: #ef0d33;
     transition: color .3s linear;
     text-decoration: none;
@@ -137,6 +139,12 @@ li.menu-item {
     margin: 30px 0;
     text-align: left;
 }
+.contact-us-container {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'bold-font';
+}
 
 @media screen and (min-width: 48em)
     .navbar__opener {
@@ -144,3 +152,11 @@ li.menu-item {
         right: 43px;
     }
 }
+
+
+/*@media screen and (min-width: 1300)
+    .navbar__opener {
+        top: 43px;
+        right: 43px;
+    }
+}*/
