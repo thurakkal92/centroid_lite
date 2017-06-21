@@ -11,11 +11,6 @@
     font-family: 'paragraph-font';
     src: url(../../fonts/JosefinSans-Regular.ttf);
 }
-
-/*.site-container .container {
-    width: 1320px !important;
-}*/
-
 .h1{
     font-size: 86px;
     font-family: 'bold-font';
@@ -29,6 +24,7 @@
     text-transform: uppercase;
     margin-bottom: 30px;
     text-align: center;
+    letter-spacing: 2px;
 }
 
 .p {
@@ -38,7 +34,7 @@
     font-family: 'paragraph-font';
 }
 .main-title {
-    margin-top: 25%;
+    margin-top: 180px;
     color: #fff;
 }
 .nav-bar {
@@ -107,7 +103,7 @@
     background-position: center; 
     overflow: hidden; 
 }
-.loading-section .p {
+.loading-section .p,.mission .h2 {
     color: #fff;
 }
 .hidden-overflow {
@@ -131,6 +127,10 @@
     opacity: 0;
     top: 134px;
 }
+.site-container .navbar--opened .menu-container {
+    opacity: 1 !important;
+}
+
 li.menu-item {
     list-style-type: none;
     display: block;
@@ -238,6 +238,85 @@ li.menu-item {
     padding: 30px;
 }
 
+.about-us {
+    background-color: #f5f5f5
+}
+
+.about-us .p {
+    color: darkslategrey;
+    text-align: center;
+}
+
+.about-us .highlited {
+    background: #ddd;
+    color: #000;
+    padding: 25px;
+}
+
+.mission {
+    background-color: #0c9;
+    text-align: center;
+}
+
+.sub-section:not(:last-child):after {
+    content: "";
+    width: 2px;
+    height: 150%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.content-heading {
+    color: #fff;
+    font-family: 'bold-font';
+    font-size: 22px;
+    text-align: center;
+    display: block;
+    padding: 40px 0px 0px 0;
+    letter-spacing: 2px;
+}
+.desc {
+    font-family: 'paragraph-font';
+    display: block;
+    font-weight: bolder;
+    text-align: center;
+    color: azure;
+}
+.mission-desc {
+    margin-top: 75px;
+    text-align: left;
+}
+ .mission-desc .desc {
+   padding: 25px;
+}
+
+.round-container {
+    max-width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 45px;
+    position: relative;
+}
+.desc.list li{
+    list-style-type: none;
+}
+.mission-img {
+    height: 36px;
+    position: absolute;
+    left: 50%;
+    margin-left: -18px;
+    top: 5px;
+}
+.round-container .desc {
+    color: #777;
+}
+
+.round-container .content-heading {
+    color: #000;
+}
 @media screen and (min-width: 48em)
     .navbar__opener {
         top: 43px;
