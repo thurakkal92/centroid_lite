@@ -24,6 +24,7 @@
     text-transform: uppercase;
     margin-bottom: 30px;
     text-align: center;
+    letter-spacing: 2px;
 }
 
 .p {
@@ -257,7 +258,7 @@ li.menu-item {
     text-align: center;
 }
 
-.sub-section:after {
+.sub-section:not(:last-child):after {
     content: "";
     width: 2px;
     height: 150%;
@@ -272,7 +273,8 @@ li.menu-item {
     font-size: 22px;
     text-align: center;
     display: block;
-    padding: 15px 0;
+    padding: 40px 0px 0px 0;
+    letter-spacing: 2px;
 }
 .desc {
     font-family: 'paragraph-font';
@@ -285,8 +287,35 @@ li.menu-item {
     margin-top: 75px;
     text-align: left;
 }
-.mission-desc .content-heading, .mission-desc .desc {
-   text-align: left;
+ .mission-desc .desc {
+   padding: 25px;
+}
+
+.round-container {
+    max-width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 45px;
+    position: relative;
+}
+.desc.list li{
+    list-style-type: none;
+}
+.mission-img {
+    height: 36px;
+    position: absolute;
+    left: 50%;
+    margin-left: -18px;
+    top: 5px;
+}
+.round-container .desc {
+    color: #777;
+}
+
+.round-container .content-heading {
+    color: #000;
 }
 @media screen and (min-width: 48em)
     .navbar__opener {
