@@ -109,14 +109,6 @@
 .hidden-overflow {
     overflow: hidden;
 }
-/*.overlay-black {
-    width: 100%;
-    height: 100vh;
-    background: #000;
-    opacity: 0.5;
-    z-index: 2;
-    position: absolute;
-}*/
 .logo-img img {
     height: 155px;
 }
@@ -168,6 +160,10 @@ li.menu-item {
 }
 .what-we-do .h2 {
     margin-bottom: 65px;
+}
+
+.what-we-do .p {
+    text-align: left;
 }
 .contact-us-container {
     color: #fff;
@@ -261,7 +257,7 @@ li.menu-item {
 .sub-section:not(:last-child):after {
     content: "";
     width: 2px;
-    height: 150%;
+    height: 130%;
     background-color: #fff;
     position: absolute;
     top: 0;
@@ -273,7 +269,7 @@ li.menu-item {
     font-size: 22px;
     text-align: center;
     display: block;
-    padding: 40px 0px 0px 0;
+    padding: 10px 0px 0px 0;
     letter-spacing: 2px;
 }
 .desc {

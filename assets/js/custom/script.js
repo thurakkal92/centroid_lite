@@ -10,10 +10,11 @@ $(function(){
         scale: 1,
         easing: "ease",
         distance: "50px",
-        mobile: true
+        mobile: true,
+        origin: "bottom"
     };
 
-    sr.reveal('.main-title,.content-sep,.p,.menu-container,h2,.round-img-container,.contact-us-form,.map-container', intro, 200);
+    // sr.reveal('.main-title,.content-sep,.p,.menu-container,h2,.round-img-container,.contact-us-form,.map-container', intro, 200);
 
 
 	$(".navbar__opener").on("click",function(){
