@@ -11,10 +11,11 @@ $(function(){
         easing: "ease",
         distance: "50px",
         mobile: true,
-        origin: "bottom"
+        origin: "bottom",
+        delay: 200
     };
 
-    // sr.reveal('.main-title,.content-sep,.p,.menu-container,h2,.round-img-container,.contact-us-form,.map-container', intro, 200);
+    sr.reveal('.main-title,.content-sep,.p,.menu-container,.content-heading,.desc,.h2,.round-img-container,.contact-us-form,.map-container,.mission-desc .col-md-4', intro);
 
 
 	$(".navbar__opener").on("click",function(){

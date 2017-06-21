@@ -314,6 +314,13 @@ li.menu-item {
     color: #000;
     padding-top: 40px;
 }
+.about-us .question-head {
+    font-family: 'bold-font';
+    letter-spacing: 1px;
+    text-align: left;
+    font-size: 28px;
+    padding: 20px 0;
+}
 @media screen and (min-width: 48em)
     .navbar__opener {
         top: 43px;
