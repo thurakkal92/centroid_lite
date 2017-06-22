@@ -97,7 +97,7 @@
 }
 .loading-section {
     background: #000;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-size: cover;
     background-position: center; 
