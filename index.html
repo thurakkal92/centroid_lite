@@ -153,15 +153,10 @@
               <div class="row">
                   <div class="col-md-6 col-sm-12 padding-30">
                       <form name="contact-us-form" class="contact-us-form" action="https://formspree.io/nthurakkal92@gmail.com" method="POST">
-                          <input type="text" name="name" class="form-input" placeholder="Name*">
-                          <input type="text" name="phone-num" class="form-input" placeholder="Phone Number*">
-                          <input type="text" name="email" class="form-input" placeholder="Email*">
-                          <textarea class="form-input" placeholder="Messages*"></textarea>
-                          <!-- CONFIG -->
-                          <input class="is-hidden" type="text" name="_gotcha">
-                          <input type="hidden" name="_subject" value="Subject">
-                          <input type="hidden" name="_cc" value="email@cc.com">
-                          <!-- /CONFIG -->
+                          <input type="text" name="name" class="form-input" placeholder="Name*" required="required">
+                          <input type="text" name="phone-num" class="form-input" placeholder="Phone Number*" required="required">
+                          <input name="email" class="form-input" placeholder="Email*" type="email" required="required">
+                          <textarea class="form-input" name="message" placeholder="Messages*" required="required"></textarea>
                           <button type="submit" class="button btn btn-primary btn-lg">SEND</button>
                       </form>
                   </div>
