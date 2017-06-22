@@ -97,7 +97,7 @@
 }
 .loading-section {
     background: #000;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-size: cover;
     background-position: center; 
@@ -321,6 +321,42 @@ li.menu-item {
     font-size: 28px;
     padding: 20px 0;
 }
+.text-content {
+    border-bottom: 2px solid rgba(221, 221, 221, 0.7);
+}
+.home-page-owl .owl-item {
+    padding: 20px;
+}
+.footer-container {
+    background-color: #000; 
+    text-align: center;
+     text-transform: uppercase;
+}
+
+.footer-container .menu-item{
+    display: inline-block;
+}
+.footer-container .land-details {
+    background: transparent;
+    text-align: center;
+     font-size: 18px;
+     padding-bottom: 20px;
+     color: #777;
+}
+.footer-container .menu-item .menu-link {
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+.footer-copyright {
+    border-top: 2px solid #fff;
+    padding: 20px 0;
+    color: #fff;
+    text-transform: none;
+    color: #777;
+    font-family: 'paragraph-font'
+}
+
 @media screen and (min-width: 48em)
     .navbar__opener {
         top: 43px;
@@ -329,9 +365,8 @@ li.menu-item {
 }
 
 
-/*@media screen and (min-width: 1300)
-    .navbar__opener {
-        top: 43px;
-        right: 43px;
+@media screen and (max-width: 767px) {
+    .sub-section:not(:last-child):after {
+        display: none;
     }
-}*/
+}

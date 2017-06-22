@@ -1,6 +1,11 @@
 $(function(){
-
-	 window.sr = ScrollReveal({
+	$('.owl-carousel').owlCarousel({
+		autoWidth:false,
+	    nav:true,
+	    items:4,
+	    margin:1,
+	});
+	window.sr = ScrollReveal({
         reset: false
     });
 
@@ -9,7 +14,7 @@ $(function(){
         duration: 900,
         scale: 1,
         easing: "ease",
-        distance: "50px",
+        distance: "70px",
         mobile: true,
         origin: "bottom",
         delay: 200
