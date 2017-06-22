@@ -177,7 +177,7 @@ li.menu-item {
     height: 300px;
     border-radius: 50%;
     border: 5px solid #fff;
-    background: url(../../images/what_we_do.jpg);
+    background: url(../../images/image_3.jpg);
     background-size: cover;
     background-position: center;
     margin-left: auto;
@@ -321,17 +321,88 @@ li.menu-item {
     font-size: 28px;
     padding: 20px 0;
 }
-@media screen and (min-width: 48em)
-    .navbar__opener {
-        top: 43px;
-        right: 43px;
-    }
+.text-content {
+    border-bottom: 2px solid rgba(221, 221, 221, 0.7);
+}
+.home-page-owl .owl-item {
+    padding: 20px;
+}
+.home-page-owl {
+    z-index: 0;
+}
+.home-page-owl .img {
+    border: 7px solid #fff;
+    box-shadow: 0 0 3px #ccc;
+}
+.footer-container {
+    background-color: #000; 
+    text-align: center;
+     text-transform: uppercase;
 }
 
+.footer-container .menu-item{
+    display: inline-block;
+}
+.footer-container .land-details {
+    background: transparent;
+    text-align: center;
+     font-size: 18px;
+     padding-bottom: 20px;
+     color: #777;
+     padding-bottom: 50px;
+}
+.footer-container .menu-item .menu-link {
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+.footer-copyright {
+    border-top: 2px solid #666;
+    padding: 20px 0;
+    color: #fff;
+    text-transform: none;
+    color: #777;
+    font-family: 'paragraph-font'
+}
+.carousel-control-next {
+    right: -10%;
+}
 
-/*@media screen and (min-width: 1300)
-    .navbar__opener {
-        top: 43px;
-        right: 43px;
+.carousel-control-prev {
+    left: -10%;
+}
+
+@media (max-width: 767px) {
+    .sub-section:not(:last-child):after {
+        width: 20%;
+        height: 8px;
+        background-color: #fff;
+        top: inherit;
+        left: 50%;
+        bottom: -20px;
+        transform: translate(-50%,-50%);
     }
-}*/
+    .sub-section {
+        margin-bottom: 20px;
+    }
+    .round-img-container {
+        margin: 0 auto;
+        width: 260px;
+        height: 260px;
+    }
+    .h1 {
+        font-size: 3em;
+        line-height: 50px;
+    }
+    .p {
+        font-size: 18px;
+        text-align: center;
+    }
+    .navbar__opener {
+        top: 25px;
+        right: 25px;
+    }
+    .logo-img img {
+        height: 100px;
+    }
+}
