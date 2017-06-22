@@ -327,9 +327,9 @@ li.menu-item {
 .home-page-owl .owl-item {
     padding: 20px;
 }
-.home-page-owl {
+/*.home-page-owl {
     z-index: 0;
-}
+}*/
 .home-page-owl .img {
     border: 7px solid #fff;
     box-shadow: 0 0 3px #ccc;
