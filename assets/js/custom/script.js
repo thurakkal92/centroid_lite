@@ -29,9 +29,23 @@ $(function(){
 
 
 	$(".navbar__opener").on("click",function(){
+		toggleMenu();
+	});
+
+	$(".menu-list .menu-link").on("click",function(e){
+		e.preventDefault();
+		var target = "."+$(this).data('target');
+		toggleMenu();
+		$('html, body').animate({
+        	scrollTop: $(target).offset().top
+    	}, 1000);
+
+	});
+
+	function toggleMenu(){
 		$(".nav-bar").toggleClass('navbar--opened');
 		$(".menu-container").toggleClass('fadeIn animated');
 		$('body').toggleClass('hidden-overflow');
 		$(".home-content").toggleClass("bring-top");
-	});
+	}
 });
