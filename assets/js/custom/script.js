@@ -39,7 +39,7 @@ $(function(){
 		$('html, body').animate({
         	scrollTop: $(target).offset().top
     	}, 1000);
-
+		$('body').toggleClass('hidden-overflow');
 	});
 
 	function toggleMenu(){
