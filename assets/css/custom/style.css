@@ -119,10 +119,17 @@
     cursor: pointer;
     margin-right: 10px;
 }
+.button a {
+    text-decoration: none;
+    color: #fff;
+}
 
 .loading-section .button:hover{ 
     background-color: #fff;
     color:  #ca0000;
+}
+.loading-section .button:hover a{  
+    color: #ca0000;
 }
 .loading-section .p,.mission .h2 {
     color: #fff;
