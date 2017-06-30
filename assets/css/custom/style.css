@@ -95,6 +95,10 @@
 .navbar__opener span:nth-child(4) {
     top: 29px;
 }
+.navbar--opened .menu-container {
+    position: absolute;
+    z-index: 3;
+}
 .loading-section {
     background: #000;
     height: 100vh;
@@ -102,6 +106,23 @@
     background-size: cover;
     background-position: center; 
     overflow: hidden; 
+}
+
+.bring-top {
+    position: absolute;
+    z-index: 2;
+}
+.loading-section .button {
+    width: auto;
+    background-color: #ca0000;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.loading-section .button:hover{ 
+    background-color: #fff;
+    color:  #ca0000;
 }
 .loading-section .p,.mission .h2 {
     color: #fff;
@@ -144,7 +165,7 @@ li.menu-item {
 .content-sep {
     width: 50px;
     height: 7px;
-    background-color: #ef0d33;
+    background-color: #ca0000;
     margin: 30px 0;
     text-align: left;
 }
@@ -196,13 +217,15 @@ li.menu-item {
 .button {
     border: none;
     color: #fff;
-    background-color: #ef0d33;
+    background-color: #ca0000;
     width: 100%;
     text-transform: uppercase;
-    font-family: 'paragraph-font';
+    font-family: 'bold-font';
     text-align: center;
     cursor: pointer;
     border-radius: 0;
+    letter-spacing: 1.5px;
+    cursor: pointer;
 }
 
 .map-container {
