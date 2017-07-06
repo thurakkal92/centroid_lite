@@ -25,7 +25,7 @@ $(function(){
         delay: 200
     };
 
-    sr.reveal('.btn,.main-title,.content-sep,.p,.menu-container,.content-heading,.desc,.logo-img,.h2,.home-page-owl,.footer-container .menu-item,.footer-container img,.land-details .span,.round-img-container,.contact-us-form,.map-container,.mission-desc .col-md-4', intro);
+    sr.reveal('.card,.btn,.main-title,.content-sep,.p,.menu-container,.content-heading,.desc,.h2,.home-page-owl,.footer-container .menu-item,.footer-container img,.land-details .span,.round-img-container,.contact-us-form,.map-container,.mission-desc .col-md-4', intro);
 
 
 	$(".navbar__opener").on("click",function(){
