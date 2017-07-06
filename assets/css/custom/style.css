@@ -101,7 +101,7 @@
 }
 .loading-section {
     background: #000;
-    height: 100vh;
+    height: 800px;
     width: 100%;
     background-size: cover;
     background-position: center; 
@@ -112,6 +112,8 @@
     position: absolute;
     z-index: 2;
 }
+
+
 .loading-section .button {
     width: auto;
     background-color: #ca0000;
@@ -249,7 +251,29 @@ li.menu-item {
     font-size: 20px;
     letter-spacing: 1.2px;
 }
-
+.marketing {
+    background-color: #f1f1f1;
+}
+.card {
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.card-img-top {
+    height: 20rem;
+    background: url(../../images/aerospace.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+.card-title {
+    font-family: 'bold-font';
+}
+.card-text {
+    font-family: 'paragraph-font';
+}
+.show-more-btn {
+    background: #000;
+}
 .land-details .span {
     width: 100%;
     display: block;
