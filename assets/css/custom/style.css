@@ -26,6 +26,13 @@
     text-align: center;
     letter-spacing: 2px;
 }
+.h4 {
+    padding-left: 0;
+    font-size: 32px;
+    color: #fff;
+   font-family: 'bold-font';
+   letter-spacing: 0.7px;
+}
 
 .p {
     padding-left: 0;
@@ -96,21 +103,25 @@
     top: 29px;
 }
 .navbar--opened .menu-container {
-    position: absolute;
-    z-index: 3;
+    visibility: visible;
 }
 .loading-section {
-    background: #000;
+   /* background: #000;
     height: 800px;
     width: 100%;
     background-size: cover;
-    background-position: center; 
+    background-position: center; */
     overflow: hidden; 
 }
-
+.carousel-img {
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
 .bring-top {
     position: absolute;
-    z-index: 2;
+    z-index: 4;
 }
 
 
@@ -144,10 +155,13 @@
 }
 .menu-container {
     position: absolute;
-    height: calc(100vh - 75px);
+    height: calc(100vh);
     background-color: #000;
     opacity: 0;
-    top: 134px;
+    top: 0;
+    padding-top: 134px;
+    z-index: 0;
+    visibility: hidden;
 }
 .site-container .navbar--opened .menu-container {
     opacity: 1 !important;
@@ -175,10 +189,18 @@ li.menu-item {
     width: 50px;
     height: 7px;
     background-color: #ca0000;
-    margin: 30px 0;
+    margin: 30px auto;
     text-align: left;
 }
-
+.carousel-control-prev{
+    left: 0 !important;
+}
+.carousel-control-next {
+    right: 0 !important;
+}
+.loading-section .carousel-caption {
+    top: 0;
+}
 .what-we-do {
     background: #ff943b;
     color: #fff;
@@ -254,6 +276,9 @@ li.menu-item {
 .marketing {
     background-color: #f1f1f1;
 }
+.marketing .extra-content {
+   display: none;
+}
 .card {
     margin: 0 auto;
     margin-bottom: 30px;
@@ -272,7 +297,8 @@ li.menu-item {
     font-family: 'paragraph-font';
 }
 .show-more-btn {
-    background: #000;
+    background: #7b7b7b;
+    width: 46%;
 }
 .land-details .span {
     width: 100%;
@@ -287,7 +313,12 @@ li.menu-item {
 .padding-30 {
     padding: 30px;
 }
-
+.margin-5 {
+    margin: 5px;
+}
+.text-center {
+    text-align: center;
+}
 .about-us {
     background-color: #f5f5f5
 }
@@ -375,15 +406,11 @@ li.menu-item {
     font-size: 28px;
     padding: 20px 0;
 }
-/*.text-content {
-    border-bottom: 2px solid rgba(221, 221, 221, 0.7);
-}*/
+
 .home-page-owl .owl-item {
     padding: 20px;
 }
-/*.home-page-owl {
-    z-index: 0;
-}*/
+
 .home-page-owl .img {
     border: 7px solid #fff;
     box-shadow: 0 0 3px #ccc;
@@ -424,6 +451,57 @@ li.menu-item {
 
 .carousel-control-prev {
     left: -10%;
+}
+.products .sub-section {
+    background-image: url(../../images/rubber_moulded.jpg);
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+.products .sub-section .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.45;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease;
+}
+.products .sub-section .button {
+    padding: 10px;
+    font-size: 16px;
+    width: 105px;
+    border: 2px solid;
+}
+.products .sub-section:hover .overlay{
+    background-color: #ca0000;
+}
+.products .sub-section:after {
+    display: none;
+}
+.products .sub-section .text-content {
+    color: #fff;
+    z-index: 2;
+}
+.products .sub-section .sub-text-content {
+    display: none;
+    /*transition: all 0.3s ease;*/
+}
+.sub-text-content .p {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0) !important;
+}
+.products .sub-section:hover .sub-text-content {
+    display: block;
 }
 
 @media (max-width: 767px) {
