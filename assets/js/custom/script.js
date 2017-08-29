@@ -73,4 +73,8 @@ $(function(){
 		$('body').toggleClass('hidden-overflow');
 		$(".home-content").toggleClass("bring-top");
 	}
+
+	function setAsBackground(){
+		
+	}
 });

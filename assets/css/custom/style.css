@@ -43,6 +43,7 @@
 .main-title {
     margin-top: 230px;
     color: #fff;
+    text-shadow: 0 0 2px #000;
 }
 .nav-bar {
     background: transparent;
@@ -267,8 +268,8 @@ li.menu-item {
 }
 .land-details {
     width: 100%;
-    background: #076194;
-    color: #fff;
+    background: #ddd;
+    color: #000;
     font-family: 'bold-font';
     font-size: 20px;
     letter-spacing: 1.2px;
