@@ -66,6 +66,22 @@
     right: 43px;
     z-index: 100;
 }
+
+.mail-icon {
+    right: 115px;
+    top: 48px;
+    display: inline-block;
+    width: 64px;
+    height: 48px;
+    position: relative;
+    transform: rotate(0deg);
+    cursor: pointer;
+    position: absolute;
+    z-index: 0;
+}
+.mail-icon img {
+    height: 37px;
+}
 .navbar__opener span {
     display: block;
     position: absolute;
@@ -230,7 +246,7 @@ li.menu-item {
     height: 300px;
     border-radius: 50%;
     border: 5px solid #fff;
-    background: url(../../images/image_3.jpg);
+    background: url(../../images/ptfe1.jpg);
     background-size: cover;
     background-position: center;
     margin-left: auto;
