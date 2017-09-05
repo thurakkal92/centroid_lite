@@ -37,6 +37,10 @@ $(function(){
 		toggleMenu();
 	});
 
+	$('#home_page_carousel').carousel({
+  		interval: 4000
+	})
+
 	$(".menu-list .menu-link").on("click",function(e){
 		e.preventDefault();
 		var target = "."+$(this).data('target');

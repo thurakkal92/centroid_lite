@@ -38,7 +38,7 @@
     padding-left: 0;
     font-size: 22px;
     color: #fff;
-    font-family: 'paragraph-font';
+    font-family: calibri;
 }
 .main-title {
     margin-top: 230px;
@@ -67,9 +67,15 @@
     z-index: 100;
 }
 
+.carousel-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.41);
+}
 .mail-icon {
-    right: 115px;
-    top: 48px;
+    right: 100px;
+    top: 47px;
     display: inline-block;
     width: 64px;
     height: 48px;
@@ -79,8 +85,9 @@
     position: absolute;
     z-index: 0;
 }
-.mail-icon img {
-    height: 37px;
+.mail-icon svg:hover {
+    fill: #ef0d33;
+    transition: .25s ease-in-out,fill .3s ease-out;
 }
 .navbar__opener span {
     display: block;
@@ -311,7 +318,7 @@ li.menu-item {
     font-family: 'bold-font';
 }
 .card-text {
-    font-family: 'paragraph-font';
+    font-family: calibri;
 }
 .show-more-btn {
     background: #7b7b7b;
@@ -553,5 +560,8 @@ li.menu-item {
     }
     .logo-img img {
         height: 100px;
+    }
+    .card {
+        width: auto !important;
     }
 }
