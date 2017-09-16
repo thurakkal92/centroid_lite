@@ -3,17 +3,6 @@ $(function(){
 		var src = $(this).data("src");
 		$(this).find('.carousel-img').css("background-image","url(" + src + ")");
 	});
-	// $('.owl-carousel').owlCarousel({
-	// 	autoWidth:false,
-	//     nav:true,
-	//     items:5,
-	//     margin:1,
-	//     itemsDesktop: [1024, 3],
- //        itemsDesktopSmall: [768, 2],
- //        itemsTablet: [576, 1],
- //        responsiveRefreshRate: 200,
-	//     navText: ['<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a>',' <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>']
-	// });
 	window.sr = ScrollReveal({
         reset: false
     });
@@ -30,7 +19,6 @@ $(function(){
     };
 
     sr.reveal('.products .sub-section,.card,show-more-btn,.highlited,.question-head,.content-heading,.desc,.h2,.home-page-owl,.footer-container .menu-item,.footer-container img,.land-details .span,.round-img-container,.contact-us-form,.map-container,.mission-desc .col-md-4', intro);
-	//sr.reveal('.products .sub-section,.home-content,.h2,.p', intro);
 
 
 	$(".navbar__opener").on("click",function(){
@@ -76,9 +64,5 @@ $(function(){
 		$(".menu-container").toggleClass('fadeIn animated');
 		$('body').toggleClass('hidden-overflow');
 		$(".home-content").toggleClass("bring-top");
-	}
-
-	function setAsBackground(){
-		
 	}
 });
