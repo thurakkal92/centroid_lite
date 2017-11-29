@@ -38,11 +38,12 @@
     padding-left: 0;
     font-size: 22px;
     color: #fff;
-    font-family: 'paragraph-font';
+    font-family: calibri;
 }
 .main-title {
     margin-top: 230px;
     color: #fff;
+    text-shadow: 0 0 2px #000;
 }
 .nav-bar {
     background: transparent;
@@ -64,6 +65,29 @@
     top: 43px;
     right: 43px;
     z-index: 100;
+}
+
+.carousel-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.41);
+}
+.mail-icon {
+    right: 100px;
+    top: 47px;
+    display: inline-block;
+    width: 64px;
+    height: 48px;
+    position: relative;
+    transform: rotate(0deg);
+    cursor: pointer;
+    position: absolute;
+    z-index: 0;
+}
+.mail-icon svg:hover {
+    fill: #ef0d33;
+    transition: .25s ease-in-out,fill .3s ease-out;
 }
 .navbar__opener span {
     display: block;
@@ -216,6 +240,7 @@ li.menu-item {
 
 .what-we-do .p {
     text-align: left;
+    margin-bottom: 0;
 }
 .contact-us-container {
     color: #fff;
@@ -229,7 +254,7 @@ li.menu-item {
     height: 300px;
     border-radius: 50%;
     border: 5px solid #fff;
-    background: url(../../images/image_3.jpg);
+    background: url(../../images/ptfe1.jpg);
     background-size: cover;
     background-position: center;
     margin-left: auto;
@@ -237,6 +262,10 @@ li.menu-item {
 .padding-top-50 {
     padding-top: 50px;
 }
+.paddingLeft15{
+    padding-left: 15px;
+}
+
 .form-input {
     width: 100%;
     border: 2px solid rgb(28, 157, 230);
@@ -267,8 +296,8 @@ li.menu-item {
 }
 .land-details {
     width: 100%;
-    background: #076194;
-    color: #fff;
+    background: #ddd;
+    color: #000;
     font-family: 'bold-font';
     font-size: 20px;
     letter-spacing: 1.2px;
@@ -294,7 +323,7 @@ li.menu-item {
     font-family: 'bold-font';
 }
 .card-text {
-    font-family: 'paragraph-font';
+    font-family: calibri;
 }
 .show-more-btn {
     background: #7b7b7b;
@@ -305,7 +334,9 @@ li.menu-item {
     display: block;
     padding: 5px;
 }
-
+.padding-10 {
+    padding: 10px;
+}
 .padding-20 {
     padding: 20px;
 }
@@ -383,6 +414,11 @@ li.menu-item {
 }
 .desc.list li{
     list-style-type: none;
+}
+.adv-section {
+    background: #000;
+    color: #ddd;
+    padding: 10px;
 }
 .mission-img {
     height: 36px;
@@ -536,5 +572,8 @@ li.menu-item {
     }
     .logo-img img {
         height: 100px;
+    }
+    .card {
+        width: auto !important;
     }
 }
